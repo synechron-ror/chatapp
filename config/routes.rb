@@ -1,4 +1,12 @@
 Chatapp::Application.routes.draw do
+  get "messages/send"
+
+  get "messages/recieve"
+
+  get "message/send"
+
+  get "message/recieve"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
