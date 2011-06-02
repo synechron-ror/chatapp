@@ -3,6 +3,7 @@ Chatapp::Application.routes.draw do
   get "messages/send"
   get "messages/recieve"
   match "messages/index" => "messages#index"
+  match "messages" => "messages#index"
   
 
   # The priority is based upon order of creation:
