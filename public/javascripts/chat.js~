@@ -1,0 +1,15 @@
+// handles the enter key condition when using chat
+
+$('#message_content').bind('keypress', function(e) {
+        if(e.keyCode==13){
+           $('form#new_message').submit();
+	   $('#message_content').val('');   
+	}
+	
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if(code == 13) { //Enter keycode
+	   $('form#new_message').submit();
+	   $('#message_content').val('');  
+	}
+});
+ 
