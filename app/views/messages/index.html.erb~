@@ -1,8 +1,5 @@
-<% title "Chat" %>  
-  
-<ul id="chat">  
-  <%= render @messages %>  
-</ul>  
+
+<div id="chat"></div>
   
 <%= form_for Message.new, :remote => true do |f| %>  
   <%= f.text_field :content %>  

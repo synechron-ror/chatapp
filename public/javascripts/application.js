@@ -2,8 +2,7 @@
 // This file is automatically included by javascript_include_tag :defaults
  $(function() {  
   var faye = new Faye.Client('http://localhost:8000/faye');  
-   // alert('subscribing!')  
-   faye.subscribe('/messages/new', function (data) {  
-     eval(data);  
+  faye.subscribe('/messages/new', function (data) {  
+     $('#chat').append(data + '<br>');
    });  
 });  
