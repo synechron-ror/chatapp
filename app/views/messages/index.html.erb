@@ -1,5 +1,5 @@
 
-<div id="chat" class="scrollable"></div>
+<div id="chat" class="scrollable"><%= render @messages %></div>
 <div id="chat_input">  
     <%= form_for Message.new, :remote => true do |f| %>  
       <%= f.text_area :content %> <br> 

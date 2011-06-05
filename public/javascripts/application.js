@@ -3,6 +3,8 @@
  $(function() {  
   var faye = new Faye.Client('http://localhost:8000/faye');  
   faye.subscribe('/messages/new', function (data) {  
-     $('#chat').append(data + '<br>');
-   });  
+   //  $('#chat').append(data + '<br>');
+   eval(data);
+    
+  });  
 });  
