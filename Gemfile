@@ -6,9 +6,10 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '0.2.7'
-gem 'authlogic'
+gem 'devise'
 gem 'jquery-rails'
 gem 'rake', '0.8.7'
+gem 'redis'
 
 # Use unicorn as the web server
 # gem 'unicorn'

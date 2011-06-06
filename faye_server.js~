@@ -9,7 +9,7 @@ var bayeux = new faye.NodeAdapter({
 // Handle non-Bayeux requests
 var server = http.createServer(function(request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
-  response.write('Hello, non-Bayeux request');
+  response.write('This is a non-Bayeux request');
   response.end();
 });
 
