@@ -8,3 +8,6 @@ $('#message_content').bind('keydown', function(e) {
 	}
 });
  
+function setScroll() {
+  $('#chat').attr('scrollTop', $('#chat').attr('scrollHeight'));
+}

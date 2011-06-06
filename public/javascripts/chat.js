@@ -1,13 +1,16 @@
 // handles the enter key condition when using chat
+if ($.browser.mozilla) {
+  $('#message_content').keypress(checkForEnter);
+} else {
+  $('#message_content').keydown(checkForEnter);
+}
 
-$('#message_content').bind('keydown', function(e) {
-        var code = (e.keyCode || e.which);
-	if(code == 13) { //Enter keycode
+			   
+function checkForEnter(event) {
+       
+	if(event.keyCode == 13) { //Enter keycode
 	   $('form#new_message').submit();
 	   $('#message_content').val('');  
 	}
-});
- 
-function setScroll() {
-  $('#chat').attr('scrollTop', $('#chat').attr('scrollHeight'));
 }
+ 
