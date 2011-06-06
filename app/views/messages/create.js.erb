@@ -1,5 +1,5 @@
 <% broadcast "/messages/new" do %>  
-    $("#chat").append("<%= escape_javascript render(@message) %>");
-    setScroll();
+    $("#chat").append("<%= escape_javascript render(@message) %>");    
 <% end %>  
+$("#chat").scrollTop($("#chat").scrollHeight);
 $("#new_message")[0].reset();

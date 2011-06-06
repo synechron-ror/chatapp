@@ -2,7 +2,7 @@ div.scrollable {
   height: 300px;
   width: 500px;
   overflow: auto;
-  border: 8px dotted #666;
+  border: 8px solid #666;
   background-color: #fff;
   padding: 12px;
   margin-left: auto;
@@ -10,10 +10,15 @@ div.scrollable {
   margin-bottom: 25px;
 }
 
-#chat {
-  font-family: Helvetica-Bold, Verdana, Arial;
+.created_at {
+   font-family: Helvetica-Bold, Verdana, Arial;
   font-weight: Bolder;
   font-size: 18;  
+}
+
+#chat {
+  font-family: Helvetica-Bold, Verdana, Arial;
+  font-size: 14;  
 }
 
 textarea#message_content
@@ -31,5 +36,8 @@ textarea#message_content
   height: 100px;
   margin-left: auto;
   margin-right: auto;
-  border: 8px dotted #666;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
 }
