@@ -1,10 +1,7 @@
 class MessagesController < ApplicationController
-  # before_filter :authenticate_user!
+  before_filter :authenticate_user!
   def create  
-    #----- dont create message on database--------
-    @message = Message.create!(params[:message])  
-    
-    
+     @message = Message.create!(params[:message])  
   end  
   
   def index

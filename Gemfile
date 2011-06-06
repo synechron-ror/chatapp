@@ -9,7 +9,8 @@ gem 'mysql2', '0.2.7'
 gem 'devise'
 gem 'jquery-rails'
 gem 'rake', '0.8.7'
-gem 'redis'
+gem 'omniauth'
+gem 'mongrel'
 
 # Use unicorn as the web server
 # gem 'unicorn'
